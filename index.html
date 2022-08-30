@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Lojinha do Predo</title>
+    <style>
+        body {
+            background-color: rgb(15, 15, 15);
+            color: antiquewhite;
+        }
+        #outdoor, #quarto, #cozinha, #musica {
+            padding-bottom: 5vw;
+            padding-top: 5vw;
+        }
+        #head {
+            background-color: rgba(29, 29, 29, 0.76);
+            margin: 0;
+            padding: 1%;
+            padding-left: 5%;
+        }
+        #head nav div a {
+            font-weight: bold;
+            color: antiquewhite;
+        }
+        #head nav div button {
+            color: antiquewhite;
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+        }
+        #quarto, #musica {
+            background-color: rgb(43, 39, 39);
+        }
+
+        h2{
+            padding-top: 5vw;
+            padding-left: 5vw;
+            text-decoration: underline;
+        }
+        .item {
+            display: flex;
+            flex-direction: column;
+            margin: 5%;
+            padding: 5%;
+            margin-top: 0;
+            padding-top: 1%;
+            align-items: center;
+        }
+        .item-heading {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top: 5%;
+        }
+        .item-heading h4 {
+            color: rgb(0, 179, 0);
+        }
+        .carousel {
+            max-width: 50vw;
+            max-height: 50%;
+        }
+        #contato {
+            padding: 20vw;
+            padding-top: 10vw;
+            background-color: rgba(29, 29, 29, 0.76);
+        }
+    </style>
+</head>
+
+
+<body>
+    <header id="head">
+        <nav class="navbar fixed-top navbar-expand-lg" style="background-color: rgba(29, 29, 29, 1);">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Lojinha do Predo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="#outdoor">Outdoor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#quarto">Quarto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#cozinha">Cozinha</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#musica">Música</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+<!--
+<div class="item">
+    <div id="comoda" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#comoda" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#comoda" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#comoda" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#comoda" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/Comoda 1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/Comoda 2.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/Comoda 3.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/Comoda 4.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#comoda" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#comoda" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+-->
+
+
+<div id="outdoor">
+<h2>Outdoor</h2>
+
+<!-- Bike -->
+<div class="item-heading">
+    <h3>Bike + capacete e cadeado</h3>
+    <h4>R$700</h4>
+</div>
+<div class="item">
+    <div id="bike" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#bike" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#bike" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#bike" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#bike" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/Bike 1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/Bike 2.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/Bike 3.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/Bike 4.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#bike" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bike" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- Tatame -->
+<div class="item-heading">
+    <h3>Tatame 4 placas 25mm</h3>
+    <h4>R$170</h4>
+</div>
+<div class="item">
+    <div id="tatame" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#tatame" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#tatame" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#tatame" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/tatame 1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/tatame 2.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/tatame 3.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#tatame" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#tatame" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+</div>
+
+
+<div id="quarto">
+<h2>Quarto</h2>
+
+<!-- Guarda Roupas -->
+<div class="item-heading">
+    <h3>Guarda roupas 4 portas</h3>
+    <h4>R$420</h4>
+</div>
+
+<!-- Cômoda -->
+<div class="item-heading">
+    <h3>Cômoda</h3>
+    <h4>R$230</h4>
+</div>
+<div class="item">
+    <div id="comoda" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#comoda" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#comoda" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#comoda" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#comoda" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/Comoda 1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/Comoda 2.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/Comoda 3.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/Comoda 4.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#comoda" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#comoda" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- TV -->
+<div class="item-heading">
+    <h3>TV 28" (não smart)</h3>
+    <h4>R$400</h4>
+</div>
+
+<!-- Colchão solteiro -->
+<div class="item-heading">
+    <h3>Colchão solteiro</h3>
+    <h4>R$100</h4>
+</div>
+
+<!-- Colchão ar -->
+<div class="item-heading">
+    <h3>Colchão ar solteiro + bomba</h3>
+    <h4>R$40</h4>
+</div>
+
+<!-- Mesa estudos -->
+<div class="item-heading">
+    <h3>Mesa de estudos</h3>
+    <h4>R$150</h4>
+</div>
+
+<!-- Cadeira giratória -->
+<div class="item-heading">
+    <h3>Cadeira giratória</h3>
+    <h4>R$50</h4>
+</div>
+
+<!-- Tapete -->
+<div class="item-heading">
+    <h3>Tapete grandinho</h3>
+    <h4>R$120</h4>
+</div>
+
+<!-- Aspirador de pó -->
+<div class="item-heading">
+    <h3>Robozinho aspirador de pó</h3>
+    <h4>R$370</h4>
+</div>
+
+<!-- Ventilador -->
+<div class="item-heading">
+    <h3>Ventilador</h3>
+    <h4>R$100</h4>
+</div>
+</div>
+
+
+
+<div id="cozinha">
+<h2>Cozinha</h2>
+
+<!-- Espremedor Laranja -->
+<div class="item-heading">
+    <h3>Espremedor de laranjas/limão</h3>
+    <h4>R$80</h4>
+</div>
+
+<!-- Nutri Bullet -->
+<div class="item-heading">
+    <h3>Mini liquidificador</h3>
+    <h4>R$60</h4>
+</div>
+
+<!-- Torradeira -->
+<div class="item-heading">
+    <h3>Torradeira</h3>
+    <h4>R$80</h4>
+</div>
+
+<!-- Chaleira elétrica -->
+<div class="item-heading">
+    <h3>Chaleira elétrica</h3>
+    <h4>R$100</h4>
+</div>
+
+<!-- Panela arroz -->
+<div class="item-heading">
+    <h3>Panela de arroz elétria</h3>
+    <h4>R$60</h4>
+</div>
+</div>
+
+<div id="musica">
+<h2>Música</h2>
+
+<!-- Violão Rozini -->
+<div class="item-heading">
+    <h3>Violão Rozini nylon</h3>
+    <h4>R$400</h4>
+</div>
+<div class="item">
+    <div id="rozini" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#rozini" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <!-- <button type="button" data-bs-target="#rozini" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#rozini" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#rozini" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/rozini 1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <!-- <div class="carousel-item">
+                <img src="images/rozini 2.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/rozini 3.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/rozini 4.jpeg" class="d-block w-100" alt="...">
+            </div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#rozini" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#rozini" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- Tagima -->
+<div class="item-heading">
+    <h3>Tagima PR100</h3>
+    <h4>R$450</h4>
+</div>
+
+<!-- Vamp -->
+<div class="item-heading">
+    <h3>Pedaleira Vamp-3 pra guitarra</h3>
+    <h4>R$300</h4>
+</div>
+
+<!-- Amp -->
+<div class="item-heading">
+    <h3>Amplificador Meteoro</h3>
+    <h4>R$250</h4>
+</div>
+
+<!-- Teclado Controlador -->
+<div class="item-heading">
+    <h3>Teclado controlador com pedal Sustain</h3>
+    <h4>R$800</h4>
+    <div class="item">
+        <div id="controlador" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#controlador" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#controlador" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Controlador 1.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Controlador 2.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#controlador" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#controlador" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Microfone -->
+<div class="item-heading">
+    <h3>Microfone condensador</h3>
+    <h4>R$90</h4>
+</div>
+</div>
+
+<footer id="contato">
+    <p>Gostou de algum item?</p>
+    <p>Entre em contato pelo WhatsApp</p>
+    <p>(34) 997 068 560</p> 
+</footer>
+
+</body>
+</html>
