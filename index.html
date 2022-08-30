@@ -12,18 +12,19 @@
             background-color: rgb(15, 15, 15);
             color: antiquewhite;
         }
-        #outdoor, #quarto, #cozinha, #musica {
-            padding-bottom: 5vw;
-            padding-top: 5vw;
+        .fixed-top {
+            background-color: rgba(29, 29, 29, 1);
         }
         #head {
-            background-color: rgba(29, 29, 29, 0.76);
             margin: 0;
-            padding: 1%;
-            padding-left: 5%;
+            padding: 1vw;
+            padding-left: 5vw;
+            min-height: 8vw;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
         }
         #head nav div a {
-            font-weight: bold;
             color: antiquewhite;
         }
         #head nav div button {
@@ -31,6 +32,10 @@
         }
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+        }
+        #outdoor, #quarto, #cozinha, #musica {
+            padding-bottom: 5vw;
+            padding-top: 10vw;
         }
         #quarto, #musica {
             background-color: rgb(43, 39, 39);
@@ -49,6 +54,7 @@
             margin-top: 0;
             padding-top: 1%;
             align-items: center;
+
         }
         .item-heading {
             display: flex;
@@ -74,10 +80,10 @@
 
 <body>
     <header id="head">
-        <nav class="navbar fixed-top navbar-expand-lg" style="background-color: rgba(29, 29, 29, 1);">
+        <nav class="navbar fixed-top navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Lojinha do Predo</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button id="botaotog" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -197,13 +203,13 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/tatame 1.jpeg" class="d-block w-100" alt="...">
+                <img src="images/Tatame 1.jpeg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="images/tatame 2.jpeg" class="d-block w-100" alt="...">
+                <img src="images/Tatame 2.jpeg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="images/tatame 3.jpeg" class="d-block w-100" alt="...">
+                <img src="images/Tatame 3.jpeg" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#tatame" data-bs-slide="prev">
@@ -369,16 +375,16 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/rozini 1.jpg" class="d-block w-100" alt="...">
+                <img src="images/Rozini 1.jpg" class="d-block w-100" alt="...">
             </div>
             <!-- <div class="carousel-item">
-                <img src="images/rozini 2.jpeg" class="d-block w-100" alt="...">
+                <img src="images/Rozini 2.jpeg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="images/rozini 3.jpeg" class="d-block w-100" alt="...">
+                <img src="images/Rozini 3.jpeg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="images/rozini 4.jpeg" class="d-block w-100" alt="...">
+                <img src="images/Rozini 4.jpeg" class="d-block w-100" alt="...">
             </div> -->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#rozini" data-bs-slide="prev">
@@ -414,6 +420,7 @@
 <div class="item-heading">
     <h3>Teclado controlador com pedal Sustain</h3>
     <h4>R$800</h4>
+</div>
     <div class="item">
         <div id="controlador" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
@@ -438,7 +445,7 @@
             </button>
         </div>
     </div>
-</div>
+
 
 <!-- Microfone -->
 <div class="item-heading">
